@@ -1,0 +1,132 @@
+.posts-wraper {
+    /* background-color: gray; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.post-block {
+    background-color: deepskyblue;
+    max-width: 1030px;
+    width: 100%;
+    padding: 0 15px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 35px;
+    cursor: pointer;
+}
+
+.overlay {
+    background-color: gray;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 800px;
+    width: 100%;
+    height: 400px;
+    margin: 0 10px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.overlay.active {
+    display: flex;
+}
+.overlay-text {
+    font-size: 22px;
+}
+.overlay-X-mark {
+    font-size: 26px;
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    height: 30px;
+    width: 150px;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+.delete-btn:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+
+.add-post-btn-fixed {
+    padding: 16px 20px;
+    background-color: blueviolet;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 18px;
+    position:fixed;
+    right: 12px;
+    bottom: 26px;
+    cursor: pointer;
+    transform: all 0.15s linear;
+}
+.add-post-btn-fixed:hover {
+    background-color: rgb(113, 33, 188);
+}
+
+.add-post-overlay {
+    background-color: #fff;
+    border: 8px solid rgb(10, 192, 10);
+    justify-content: space-between;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:300px;
+    height: 160px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+
+}
+.add-post-overlay.active {
+    display: flex;
+}
+.add-post-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: gray; */
+    height: 100%;
+    justify-content: space-between;
+}
+.add-post-input {
+    height: 36px;
+    padding: 6px;
+    margin-top: 40px;
+}
+.add-post-btn {
+    width: 80px;
+    padding: 10px 14px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.add-post-btn:hover {
+    background-color: #fff;
+    border: 2px solid black;
+    padding: 8px 12px;
+    color: #000;
+}
