@@ -130,3 +130,28 @@
     padding: 8px 12px;
     color: #000;
 }
+
+/* slider */
+
+.slider-wraper {
+    /* background-color: gray; */
+    position: relative;
+}
+.slider-wraper button {
+    background-color: transparent;
+}
+.arrow {
+    background-color: gray;
+    font-size: 34px;
+    padding: 10px 16px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.arrow-left {
+    left: 20px;
+}
+.arrow-right {
+    right: 20px;
+}
